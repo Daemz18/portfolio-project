@@ -1,0 +1,100 @@
+:root {
+  --l: #E8E9F3;
+  --d: #221F1F;
+  --w: #F8F4F9;
+  --b: #26363d;
+  --br: #E26E3C;
+  --gr: #6a676a;
+
+  /* sizes */
+  --xxs: 0.5rem;
+  --xs: 0.75rem;
+  --s: 0.875rem;
+  --base: 1rem; 
+  --lg: 1.125rem;
+  --xl: 1.25rem;
+  --x2l: 1.5rem;
+  --x3l: 1.875rem;
+  --x4l: 2.25rem;
+  --x5l: 3rem;
+  --x6l: 3.75rem;
+  --x7l: 4.5rem;
+  --x8l: 6rem;
+  --x9l: 8rem;
+  --x10l: 10rem;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img, picture, video,  canvas, svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+.cta {
+  background-color: var(--br);
+  color: var(--w);
+  font-size: 110%;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 0.5rem;
+
+  padding: 0.5rem 2rem;
+  border: 1px solid var(--b);
+  border-radius: 5px;
+  transition: translate 0.2s ease-in-out, box-shadow 0.2s ease;
+} 
+
+.cta:hover {
+  box-shadow: 0 7px var(--b);
+  translate: 0 -7px;
+}
+
+a {
+  color: var(--d);
+
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+strong {
+  color: black;
+  font-size: 110%;
+}
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--br);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--b);
+}
+
+
+/* For Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--br) var(--b);
+}
+
+
+.heading {
+  font-size: 200%;
+  text-align: center;
+  padding-bottom: 1rem;
+}

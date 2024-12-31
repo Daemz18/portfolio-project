@@ -1,0 +1,165 @@
+.skills {
+  margin-top: 5rem;
+  height: 100vh;
+}
+
+
+
+.skillsBox {
+  width: 100%;
+  height: 85vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  background-color: var(--d);
+
+  border-radius: 5px;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.432);
+  
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+.skillsBox::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.skillsBox::-webkit-scrollbar-thumb {
+  background-color: var(--br);
+  border-radius: 5px;
+}
+
+.skillsBox::-webkit-scrollbar-track {
+  background: var(--b);
+}
+
+
+.skillGroup {
+  width: 80%;
+  height: 94%;
+  padding: 1rem;
+
+  background-color: var(--l);
+
+  border-radius: 5px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skillGroup h2 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.skillGroup em {
+  font-size: 70%;
+  opacity: 0.8;
+}
+
+.hadSkills {
+  width: 100%;
+  height: 85%;
+  
+  background-color: var(--b);
+
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  
+}
+
+.hadSkills img {
+  filter: grayscale(100%);
+  transition: all 0.1s ease-in;
+}
+
+.hadSkills img:hover {
+  filter: grayscale(0%);
+  scale: 1.1;
+}
+
+.skillImg {
+  width: 30%;
+  aspect-ratio: 4/4;
+  margin-top: 8px;
+  object-fit: cover;
+}
+
+.skills a {
+  width: fit-content;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small mobile */
+/* @media (min-width: 320px) {
+ 
+} */
+
+/* m mobile */
+/* @media (min-width: 375px) {
+ 
+} */
+
+/* l mobile */
+/* @media (min-width: 425px) {
+ 
+} */
+
+/* xs */
+/* @media (min-width: 475px) {
+
+} */
+
+/* sm */
+/* @media (min-width: 640px) {
+
+} */
+
+/* m */
+@media (min-width: 768px) {
+  .skillsBox {
+    justify-content: space-evenly;
+  }
+
+  .skillGroup {
+  width: 40%;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+   .skillsBox {
+    justify-content: space-evenly;
+  }
+
+  .skillGroup {
+  width: 30%;
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {
+ 
+} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+
+} */

@@ -1,0 +1,119 @@
+nav {
+  width: 60vw;
+  margin-top: 1rem;
+  padding: 10px;
+
+  background-color: var(--b);
+
+  display: flex;
+  justify-content: space-evenly;
+
+  border-radius: 5px;
+
+  position: fixed;
+  top: 0;
+  left: 50%; /* Move to the center of the x-axis */
+  transform: translateX(-50%); /* Offset by half the element's width */
+
+  z-index: 999;
+}
+
+nav a {
+  /* padding: 10px; */
+  color: var(--l);
+
+  transition: all 0.1s ease-in;
+}
+
+nav a:hover {
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid var(--br);
+}
+
+.onTop {
+  position: fixed;
+  right: 0;
+  top: 1.6rem;
+
+  z-index: 999;
+}
+
+.onTop a {
+  width: 10vw;
+  background-color: var(--b);
+  padding: 10px;
+  color: var(--w);
+  
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.onTopLeft {
+  position: fixed;
+  left: 1.5rem;
+  top: 1.2rem;
+  padding: 0.5rem;
+
+  border-radius: 5px;
+  background-color: var(--b);
+  color: var(--w);
+
+  z-index: 999;
+}
+
+/* small mobile */
+/* @media (min-width: 320px) {
+ 
+} */
+
+/* m mobile */
+/* @media (min-width: 375px) {
+ 
+} */
+
+/* l mobile */
+/* @media (min-width: 425px) {
+ 
+} */
+
+/* xs */
+/* @media (min-width: 475px) {
+
+} */
+
+/* sm */
+/* @media (min-width: 640px) {
+
+} */
+
+/* m */
+@media (min-width: 768px) {
+  .onTop {
+    right: 12vw;
+    
+  }
+
+  .onTop a {
+    border-radius: 10px;
+  }
+
+  .onTopLeft {
+    left: 16vw;
+  }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {
+ 
+}
+ */
+/* xl */
+/* @media (min-width: 1280px) {
+ 
+} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+
+} */
